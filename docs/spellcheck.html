@@ -194,7 +194,7 @@
 
         // Load the dictionary when the page loads
         document.addEventListener('DOMContentLoaded', async () => {
-            dictionary = await loadDictionary();
+            dictionary = await ImportDictionary();
 
             if (dictionary.length === 0) {
                 alert('Dictionary could not be loaded.');
